@@ -1,10 +1,10 @@
 [
     {
         "title": "home",
-        "url": "//graysonearle.com"
+        "url": "/"
     },
     {
         "title": "about",
-        "url": "//graysonearle.com/about"
+        "url": "/about"
     }
 ]

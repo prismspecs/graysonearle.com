@@ -1,5 +1,5 @@
 // load nav menu from json
-fetch('json/menu.json')
+fetch('/json/menu.json')
     .then(response => response.json())
     .then(data => {
         const menuContainer = document.getElementById('menu');
@@ -27,7 +27,7 @@ fetch('json/menu.json')
 
 
 // load data.json for left column
-fetch('json/events.json')
+fetch('/json/events.json')
     .then(response => response.json())
     .then(jsonData => {
         // Loop through the data
@@ -215,7 +215,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Fetch the data from JSON file
-    fetch('json/blogroll.json')
+    fetch('/json/blogroll.json')
         .then(response => response.json())
         .then(data => {
             // Sort the data based on the date property in descending order
