@@ -1,0 +1,324 @@
+[
+    {
+        "link": "https://www.sheffdocfest.com/composition/alternate-realities-summit-0",
+        "imageSrc": "images/sheffield.jpg",
+        "altText": "an image promoting a workshops at the Sheffield DocFest",
+        "caption": "Impossible Projects: Working Session with the Institute of Decolonial Technologies @ Sheffield DocFest",
+        "date": "16 June 2024"
+    },
+    {
+        "link": "https://www.facebook.com/events/s/glitch-film-umetnost-greske/1175465013868453/",
+        "imageSrc": "images/glitch.jpg",
+        "altText": "an image promoting a screening of my film in Belgrade",
+        "caption": "GLITCH FILM: UMETNOST GREŠKE",
+        "date": "2 June 2024"
+    },
+    {
+        "link": "https://weirdeconomies.com/po/residencies/scrivener",
+        "imageSrc": "images/air-we.jpg",
+        "altText": "an image promoting my participation in Weird Economies summer school as artist-in-residence 2024",
+        "caption": "Weird Econonmies Summer School 2024",
+        "date": "17 May 2024"
+    },
+    {
+        "link": "https://decenter.princeton.edu/events/spring-conference-2024/",
+        "imageSrc": "images/decenter.jpg",
+        "altText": "an image promoting my participation in Princeton Decenter 2024",
+        "caption": "Princeton Decenter 2024",
+        "date": "17 April 2024"
+    },
+    {
+        "link": "https://www.artdubai.ae/galleries-digital/",
+        "imageSrc": "images/dubai1.jpg",
+        "altText": "an image promoting my participation in Dubai Art Festival 2024",
+        "caption": "Dubai Art Festival 2024",
+        "date": "1 March 2024"
+    },
+    {
+        "link": "https://berlinprogramforartists.org/currencyexchange/",
+        "imageSrc": "images/currency1.jpg",
+        "altText": "an image promoting my participation in the Currency Exchange exhibition at the BPA Raum in Berlin",
+        "caption": "Currency Exchange @ BPA Raum in Berlin",
+        "date": "27 January 2024"
+    },
+    {
+        "link": "https://www.brno16.cz/en/movies/why-dont-the-cops-fight-each-other",
+        "imageSrc": "images/brno16.jpg",
+        "altText": "an image promoting my participation in the Brno 16 International Short Film Festival",
+        "caption": "Brno 16 International Short Film Festival",
+        "date": "10 October 2023"
+    },
+    {
+        "link": "https://www.videoartbusan.com/17th",
+        "imageSrc": "images/bivaf.webp",
+        "altText": "an image promoting my award for the Busan International Video Art Festival 2023",
+        "caption": "I was awarded at the Busan International Video Art Festival 2023 for my film 'Why don't the cops fight each other?'",
+        "date": "15 September 2023"
+    },
+    {
+        "link": "https://www.kw-berlin.de/bpa-ausstellungen-23/",
+        "imageSrc": "images/kw1.jpg",
+        "altText": "an image promoting my participation in a group exhibition at KW Institute for Contemporary Art in Berlin",
+        "caption": "'Why don't the cops fight each other?' as part of the exhibition 'Amid the Alien Corn' at KW Institute for Contemporary Art in Berlin",
+        "date": "23 November 2023"
+    },
+    {
+        "link": "https://www.twitch.tv/videos/1922961245",
+        "imageSrc": "images/trust1.jpg",
+        "altText": "an image promoting my participation in an event at Trust where I spoke about Bail Bloc",
+        "caption": "Presenting at TRUST in Berlin",
+        "date": "31 July 2023"
+    },
+    {
+        "link": "https://www.filmfestmuenchen.de/de/programm/rahmenprogramm/event/?id=7306&f=116",
+        "imageSrc": "images/munich-filmfest.jpg",
+        "altText": "an image promoting my screening of 'Why don't the cops fight each other?' at Munich Filmfest",
+        "caption": "'Why don't the cops fight each other?' at Munich Film Festival",
+        "date": "23 June 2023"
+    },
+    {
+        "link": "https://news.artnet.com/art-world/an-artist-said-a-hungarian-biennial-pushed-him-to-alter-a-work-that-took-aim-at-the-countrys-conservative-prime-minister-viktor-orban-2314908",
+        "imageSrc": "images/artnet-binale.jpg",
+        "altText": "an article about me being censored in Hungary",
+        "caption": "ArtNet article on my work being censored at the Hungarian Biennale",
+        "date": "9 June 2023"
+    },
+    {
+        "link": "https://www.indexberlin.com/exhibitions/list/27158/1000-jahre-sind-ein-tag",
+        "imageSrc": "images/bpa-raum1.jpg",
+        "altText": "an image promoting my participation in an exhibition at BPA Raum in Berlin",
+        "caption": "1000 Jahre sind ein Tag at BPA Raum in Berlin",
+        "date": "29 April 2023"
+    },
+    {
+        "link": "https://www.kurzfilmtage.de/de/presse/detail/thema-2023-against-gravity/",
+        "imageSrc": "images/oberhausen1.jpg",
+        "altText": "an image promoting my screening at Oberhausen International film festival",
+        "caption": "Oberhausen international film festival 2023",
+        "date": "26 April 2023"
+    },
+    {
+        "link": "https://www.furtherfield.org/radical-friends-book/",
+        "imageSrc": "images/radicalfriends.jpg",
+        "altText": "an image promoting the inclusion of my work in a book entitled Radical Friends",
+        "caption": "Bail Bloc in Radical Friends from Furtherfield Press",
+        "date": "1 April 2023"
+    },
+    {
+        "link": "http://binale.art/",
+        "imageSrc": "images/binale.jpg",
+        "altText": "an image promoting the inclusion of my work in the Budapest Biennale 2023",
+        "caption": "Budapest Bienniale 2023",
+        "date": "1 May 2023"
+    },
+    {
+        "link": "https://www.kasselerdokfest.de/en/news/tabellarische-programmuebersicht-online",
+        "imageSrc": "images/dokfest.jpg",
+        "altText": "an image promoting the inclusion of my work in the Kasseler Dokfest 2022",
+        "caption": "Screening at Kasseler Dokfest 2022",
+        "date": "10 October 2022"
+    },
+    {
+        "link": "https://aianarchies.net/",
+        "imageSrc": "images/ai-anarchies.jpg",
+        "altText": "an image promoting my participation in the AI Anarchies Autumn School in Berlin",
+        "caption": "I'm a participant in the AI Anarchies Autumn School in Berlin",
+        "date": "1 October 2022"
+    },
+    {
+        "link": "https://twitter.com/sashacakes/status/1559468139963891712",
+        "imageSrc": "images/openweather1.jpg",
+        "altText": "an image promoting my collaboration with Open Weather, a meteorological satellite hacking collective",
+        "caption": "Launching open-weather apt, open source satellite image decoding software I made in collaboration with open-weather and Bill Liles",
+        "date": "16 August 2022"
+    },
+    {
+        "link": "https://www.onassis.org/culture/publications/chimeras-inventory-of-synthetic-cognition",
+        "imageSrc": "images/aibook1.jpg",
+        "altText": "an image promoting my contribution to the Chimeras: Inventory of Synthetic Cognition book",
+        "caption": "I contributed to the Chimeras: Inventory of Synthetic Cognition book published by the Onassis Foundation",
+        "date": "1 July 2022"
+    },
+    {
+        "link": "https://pioneerworks.org/classes/strike-digital-monkeywrenching-with-grayson-earle",
+        "imageSrc": "images/pw1.png",
+        "altText": "an image promoting my workshop at Pioneer Works",
+        "caption": "My STRIKE! workshop at Pioneer Works in Brooklyn",
+        "date": "20 April 2022"
+    },
+    {
+        "link": "https://www.german-films.de/news/news-releases/german-shorts-at-nijmegen-2022/index.html",
+        "imageSrc": "images/goshort.jpg",
+        "altText": "an image promoting my screening at Go Short International Short Film Festival",
+        "caption": "Go Short International Short Film Festival 2022",
+        "date": "1 April 2022"
+    },
+    {
+        "link": "https://www.bfi.org.uk/sight-and-sound/polls/best-video-essays-2021",
+        "imageSrc": "images/bfi.png",
+        "altText": "an image promoting my award for BFI's best video essays of 2021",
+        "caption": "I was awarded by BFI for my video essay",
+        "date": "1 March 2022"
+    },
+    {
+        "link": "https://milanmachinimafestival.org/blog/tag/Grayson+Earle",
+        "imageSrc": "images/matteo.jpg",
+        "altText": "an image promoting my participation in Milan Machinima Festival",
+        "caption": "Milan Machinima Festival 2021",
+        "date": "10 December 2021"
+    },
+    {
+        "link": "https://youtu.be/q3W-oMN_nUU?t=6532",
+        "imageSrc": "images/hackercongress.jpg",
+        "altText": "an image thumbnail for a video interview I did at Hacker Congress 2021",
+        "caption": "Interview for Hacker Congress 2021 in Prague",
+        "date": "1 October 2021"
+    },
+    {
+        "link": "https://www.vice.com/en/article/epn9ka/why-wont-the-cops-fight-each-other-in-grand-theft-auto-5",
+        "imageSrc": "images/vice-gta.jpg",
+        "altText": "an image promoting my work being featured in Vice",
+        "caption": "Vice article on my work in Grand Theft Auto 5",
+        "date": "31 August 2021"
+    },
+    {
+        "link": "https://theblockchainsocialist.com/bailbloc-a-cryptocurrency-scheme-against-bail/",
+        "imageSrc": "images/blockchainsocialist.png",
+        "altText": "an image promoting an interview I did for the Blockchain Socialist podcast",
+        "caption": "Interview for the Blockchain Socialist podcast",
+        "date": "26 July 2021"
+    },
+    {
+        "link": "https://kuenstlerhaus.de/en/inhalt/reconsidering-institutional-conduct-almost-everything-still-remains-to-be-done-2/",
+        "imageSrc": "images/reconsidering.jpg",
+        "altText": "an image promoting my participation on a panel at Künstlerhaus Stuttgart",
+        "caption": "Panel at Künstlerhaus Stuttgart for Reconsidering Institutional Conduct (Almost Everything Still Remains to be Done)",
+        "date": "25 July 2021"
+    },
+    {
+        "link": "https://www.akademie-solitude.de/en/event/exhibition-mutations-mutationen/",
+        "imageSrc": "images/mutations1.jpg",
+        "altText": "an image promoting my participation in an exhibition at Akademie Schloss Solitude",
+        "caption": "Mutations/Mutationen exhibition at Akademie Schloss Solitude",
+        "date": "18 June 2021"
+    },
+    {
+        "link": "https://immerse.news/screen-tactics-ec0846d44996",
+        "imageSrc": "images/screentactics.jpg",
+        "altText": "an image preview of a conversation I had for Immerse Magazine with Kevin B Lee",
+        "caption": "Conversation with Kevin B Lee for Immerse Magazine",
+        "date": "16 June 2021"
+    },
+    {
+        "link": "https://www.akademie-solitude.de/de/project/web-residencies/calls-2021/open-call/mutations/",
+        "imageSrc": "images/webres1.jpg",
+        "altText": "an image announcing a web residency for which I am a juror",
+        "caption": "I will co-jury the Mutations web residency at Akademie Schloss Solitude",
+        "date": "1 June 2021"
+    },
+    {
+        "link": "https://www.e-flux.com/announcements/382716/mutations/",
+        "imageSrc": "images/mutationslectures.jpg",
+        "altText": "an image announcing a speaker series I co-organized for Akademie Schloss Solitude",
+        "caption": "Mutations speaker series at Akademie Schloss Solitude",
+        "date": "1 May 2021"
+    },
+    {
+        "link": "https://www.instagram.com/p/CLEyblaFymE/",
+        "imageSrc": "images/gg.jpg",
+        "altText": "an image announcing my collective Artist for Workers will be taking over the Guerrilla Girls Instagram account",
+        "caption": "Guerrilla Girls Instagram takeover (as AFW)",
+        "date": "9 Feb 2021"
+    },
+    {
+        "link": "https://mediaartexploration.org/max-forum-feb2/",
+        "imageSrc": "images/max1.png",
+        "altText": "an image promoting an upcoming panel on AI and art",
+        "caption": "Panel for Media Art Exploration on AI and art",
+        "date": "1 Feb 2021"
+    },
+    {
+        "link": "https://jacobinmag.com/2020/10/us-art-museums-workers-organizing-racism-unions",
+        "imageSrc": "images/jacobin1.jpg",
+        "altText": "an article about my recent work with Artist for Workers in Jacobin Magazine",
+        "caption": "Jacobin article on my work with Artist for Workers",
+        "date": "25 Oct 2020"
+    },
+    {
+        "link": "https://www.artforum.com/news/artist-activists-light-up-guggenheim-facade-with-pointed-messages-ahead-of-reopening-84048",
+        "imageSrc": "images/artforum1.png",
+        "altText": "an article about my recent work with Artist for Workers in Art Forum",
+        "caption": "Art Forum article on my work with Artist for Workers",
+        "date": "30 September 2020"
+    },
+    {
+        "link": "https://hyperallergic.com/590869/guggenheim-museum-projections/",
+        "imageSrc": "images/hyperallergic1.jpg",
+        "altText": "an article about my recent work with Artist for Workers in Hyperallergic",
+        "caption": "Hyperallergic article on my work with Artist for Workers",
+        "date": "29 September 2020"
+    },
+    {
+        "link": "http://www.chronusartcenter.org/en/cac-exhibition-crypto_manifold/",
+        "imageSrc": "images/cac-shanghai.jpg",
+        "altText": "a promotion for an exhibition at Chronus Art Center in Shanghai",
+        "caption": "Exhibition at Chronus Art Center in Shanghai",
+        "date": "1 June 2020"
+    },
+    {
+        "link": "https://news.artnet.com/art-world/hans-haacke-museum-hack-1759014",
+        "imageSrc": "images/artnet1.jpg",
+        "altText": "an article about my recent work with Artist for Workers in Art Net",
+        "caption": "Art Net article on my work with Artist for Workers",
+        "date": "22 January 2020"
+    },
+    {
+        "link": "https://hyperallergic.com/538413/hans-haacke-gets-hacked-by-activists-at-the-new-museum/",
+        "imageSrc": "images/hyperallergic-hack.jpg",
+        "altText": "an article about hacking the Hans Haacke exhibition in Hyperallergic",
+        "caption": "Hyperallergic article on hacking the Hans Haacke exhibition at the New Museum",
+        "date": "21 January 2020"
+    },
+    {
+        "link": "https://nopalindro.me/yes/",
+        "imageSrc": "images/nopalindrome.jpg",
+        "altText": "a promotion for an upcoming exhibition as part of the Wrong Biennale",
+        "caption": "I will be participating in the Wrong Biennale 2020",
+        "date": "1 January 2020"
+    },
+    {
+        "link": "https://www.youtube.com/watch?v=oEEXw4siGDc",
+        "imageSrc": "images/mexico1.jpg",
+        "altText": "a photograph of a panel at the Centro de Cultura Digital, Mexico City",
+        "caption": "Panel at the Centro de Cultura Digital, Mexico City",
+        "date": "20 June 2019"
+    },
+    {
+        "link": "https://www.moma.org/calendar/events/5405",
+        "imageSrc": "images/moma1.png",
+        "altText": "a promotion for an upcoming talk at MoMA",
+        "caption": "Upcoming talk at MoMA",
+        "date": "11 April 2019"
+    },
+    {
+        "link": "https://www.katevassgalerie.com/news/perfect-amp-priceless-value-systems-on-the-blockchain",
+        "imageSrc": "images/katevass.jpg",
+        "altText": "a photograph of an exhibition at Kate Vass Galerie in Zurich featuring my work",
+        "caption": "Perfect & Priceless (curated by Georg Bak), Kate Voss Galerie, Zurich. Group exhibition including Ai Weiwei, Kevin Abosch, Sarah Friend, terra0, Rob Myers",
+        "date": "11 April 2019"
+    },
+    {
+        "link": "https://web3summit.com/node/node-03/",
+        "imageSrc": "images/web3.jpg",
+        "altText": "a photograph of an exhibition at Web 3 summit in Berlin featuring my work",
+        "caption": "Web3 Summit Gallery, Funkhaus, Berlin to present Bail Bloc",
+        "date": "11 February 2019"
+    },
+    {
+        "link": "https://whitney.org/Events/BadlandsUnlimited",
+        "imageSrc": "images/moma0.jpg",
+        "altText": "a promotion for my upcoming talk at the Whitney Museum",
+        "caption": "I'll be speaking with my collaborator Maya Binyam about our project, Bail Bloc, with Paul Chan of Badlands.",
+        "date": "11 February 2019"
+    }
+]

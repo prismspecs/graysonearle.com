@@ -1,0 +1,235 @@
+[
+    {
+        "role": "artist talk",
+        "what": "Critical Automation",
+        "institution": "University of Television and Film Munich",
+        "startDate": "2024-11-25",
+        "endDate": "2024-11-25",
+        "link": "https://www.hff-muc.de/de_DE/lehrstuhl-ki-allgemein"
+    },
+    {
+        "role": "panelist",
+        "what": "Art & AI (working title)",
+        "institution": "berufsverband bildender künstler*innen (bbk)",
+        "startDate": "2024-11-04",
+        "endDate": "2024-11-04",
+        "link": "https://www.bbk-berlin.de/"
+    },
+    {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "Bucharest International Experimental Film Festival",
+        "startDate": "2024-09-23",
+        "endDate": "2024-09-29",
+        "link": "https://bieff.ro/en/films/"
+    },
+    {
+        "role": "exhibition",
+        "what": "Kate Vass Gallery @ Positions",
+        "institution": "Berlin Art Week",
+        "startDate": "2024-09-11",
+        "endDate": "2024-09-15",
+        "link": "https://positions.de/exhibitors.html"
+    },
+    {
+        "role": "exhibition",
+        "what": "No Departures Without Arrivals @ ZKU Berlin",
+        "institution": "Berlin Art Week",
+        "startDate": "2024-09-11",
+        "endDate": "2024-09-15",
+        "link": "https://berlinartweek.de/en/event/no-departures-without-arrivals/f27dad29-948c-4801-87d8-662ec75993f7/"
+    },
+    {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "Viborg Animation Festival",
+        "startDate": "2024-09-9",
+        "endDate": "2024-09-15",
+        "link": "https://www.animationsfestival.dk/"
+    },
+    {
+        "role": "workshop",
+        "what": "Institute for Decolonial Technologies",
+        "institution": "Sheffield DocFest",
+        "startDate": "2024-06-16",
+        "endDate": "2024-06-16",
+        "link": "https://www.sheffdocfest.com/composition/alternate-realities-summit-0"
+    },
+    {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "Glitch Film: Umetnost Greške",
+        "startDate": "2024-06-02",
+        "endDate": "2024-06-02",
+        "link": "https://www.facebook.com/events/s/glitch-film-umetnost-greske/1175465013868453/"
+    },
+    {
+        "role": "artist talk",
+        "what": "The Embedded Politics of Technology",
+        "institution": "Nanyang Technological University (NTU), Singapore",
+        "startDate": "2024-05-06",
+        "endDate": "2024-05-06",
+        "link": "https://www.ntu.edu.sg/"
+    },
+    {
+        "role": "artist in residence",
+        "what": "Weird Economies Summer School",
+        "institution": "Goldsmiths, University of London",
+        "startDate": "2024-05-12",
+        "endDate": "2024-06-17",
+        "link": "https://weirdeconomies.com/we/"
+    },
+    {
+        "role": "panelist",
+        "what": "DeCenter Spring Conference 2024",
+        "institution": "Princeton University",
+        "startDate": "2024-04-17",
+        "endDate": "2024-04-17",
+        "link": "https://decenter.princeton.edu/events/"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Dubai Digital Arts Festival",
+        "startDate": "2024-03-01",
+        "endDate": "2024-03-31",
+        "link": "https://dubaidigitalarts.ae/",
+        "curator": "MORROW Collective"
+    },
+    {
+        "role": "screening",
+        "what": "Glitch film: Umjetnost greške",
+        "institution": "Multimedia Institute",
+        "city": "Zagreb, Croatia",
+        "startDate": "2024-03-12",
+        "endDate": "2024-03-12",
+        "curator": "Dmitry Frolov and Ejla Kovacevic",
+        "link": "https://mi2.hr/2024/03/glitch-film-umjetnost-greske/"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Currency Exchange",
+        "institution": "BPA Raum",
+        "city": "Berlin",
+        "startDate": "2024-01-27",
+        "endDate": "2024-02-24",
+        "link": "https://berlinprogramforartists.org/currencyexchange/"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Amid the Alien Corn",
+        "institution": "KW Institute for Contemporary Art",
+        "city": "Berlin",
+        "startDate": "2023-11-25",
+        "endDate": "2024-01-07",
+        "link": "https://www.kw-berlin.de/en/bpa-ausstellungen-23/",
+        "curator": "Sofie Krogh Christensen and Sophia Yvette Scherer"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Player, non-player",
+        "institution": "Sorbonne University",
+        "city": "Paris, France",
+        "startDate": "2023-11-14",
+        "endDate": "2023-12-01",
+        "link": "https://www.univ-spn.fr/events/exposition-player-non-player/"
+    },
+    {
+        "role": "screening",
+        "what": "BRNO16 Film Festival",
+        "city": "Brno, Czech Republic",
+        "startDate": "2023-10-20",
+        "endDate": "2023-10-20",
+        "link": "https://www.brno16.cz/en/movies/why-dont-the-cops-fight-each-other"
+    },
+    {
+        "role": "group exhibition/award",
+        "what": "Busan International Video Art Festival",
+        "where": "Busan, South Korea",
+        "startDate": "2023-09-15",
+        "endDate": "2023-10-15",
+        "link": "https://bivaf.org/"
+    },
+    {
+        "role": "screening",
+        "what": "Melbourne International Games Week Film Series",
+        "institution": "ACMI",
+        "city": "Melbourne, Australia",
+        "startDate": "2023-10-01",
+        "endDate": "2023-10-03",
+        "link": "https://www.acmi.net.au/whats-on/migw-film-series/"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Budapest Binálé",
+        "city": "Budapest, Hungary",
+        "startDate": "2023-05-01",
+        "endDate": "2023-09-30",
+        "link": "http://binale.art/grayson-earle/"
+    },
+    {
+        "role": "special exhibition",
+        "what": "Why Don’t the Cops Fight Each Other?",
+        "institution": "HMKV",
+        "where": "Dortmund, Germany",
+        "startDate": "2023-07-01",
+        "endDate": "2023-07-31",
+        "link": "https://dortmunder-u.de/event/hmkv-video-des-monats-11/"
+    },
+    {
+        "role": "screening",
+        "what": "Munich Filmfest",
+        "city": "Munich, Germany",
+        "startDate": "2023-06-01",
+        "endDate": "2023-07-31",
+        "link": "https://www.filmfest-muenchen.de/en/program/events/event/?id=7306&f=116"
+    },
+    {
+        "role": "group exhibition",
+        "what": "Open Systems 1: Open Worlds",
+        "institution": "Singapore Art Museum",
+        "startDate": "2023-05-04",
+        "endDate": "2023-08-10",
+        "link": "https://opensystems.sg/"
+    },
+    {
+        "role": "group exhibition",
+        "what": "1000 Jahre sind ein Tag",
+        "institution": "BPA Raum",
+        "city": "Berlin",
+        "startDate": "2023-04-29",
+        "endDate": "2023-06-10",
+        "link": "https://berlinprogramforartists.org/1000jahre-2/"
+    },
+    {
+        "role": "group online exhibition",
+        "what": "Bug World 2.0",
+        "institution": "Bug World",
+        "startDate": "2023-04-24",
+        "endDate": "2023-05-30",
+        "link": "https://newart.city/show/bug-world"
+    },
+    {
+        "role": "screening",
+        "what": "Internationale Kurzfilmtage Oberhausen",
+        "city": "Oberhausen, Germany",
+        "startDate": "2023-04-26",
+        "endDate": "2023-05-01",
+        "link": "https://www.kurzfilmtage.de/de/presse/detail/thema-2023-against-gravity/"
+    },
+    {
+        "role": "screening",
+        "what": "Kasseler Dokfest",
+        "city": "Kassel, Germany",
+        "startDate": "2022-11-15",
+        "endDate": "2022-11-20",
+        "link": "https://www.filmladen.de/fileadmin/PDF-Files/39dokfest_programm_221024_www.pdf"
+    },
+    {
+        "role": "screening",
+        "what": "GoShort Film Festival",
+        "city": "Nijmegen, Netherlands",
+        "startDate": "2022-04-01",
+        "endDate": "2022-04-30",
+        "link": "https://www.goshort.nl/user-files/uploads/2022/05/Catalogus22.pdf"
+    }
+]

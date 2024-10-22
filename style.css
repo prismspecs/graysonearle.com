@@ -1,0 +1,194 @@
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    color: #555;
+    font-size: 16px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: Inconsolata, monospace;
+    font-size: 1rem;
+}
+
+.nav a {
+    margin-right: 1rem;
+    font-family: "Inconsolata", monospace;
+    color: #555;
+}
+
+.nav a.active {
+    color: #4b4;
+    opacity: .57;
+}
+
+a:link {
+    color: #555;
+}
+
+a:visited {
+    color: #555;
+}
+
+a:active {
+    color: #4b4;
+    opacity: .57;
+}
+
+.header {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 2rem;
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+}
+
+.flex-container {
+    display: flex;
+}
+
+.column {
+    /* padding-right: 1rem; */
+}
+
+.left-content {
+    margin-right: 4rem;
+    width: 520px;
+    /* max-width: 414px; */
+}
+
+.left-content .item {
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    padding-left: .5rem;
+}
+
+.left-content .item span {
+    display: block;
+    line-height: 1.2;
+}
+
+
+.left-content .item .role {
+    color: #44b;
+    opacity: .57;
+}
+
+.left-content .item .what {
+    /* font-weight: bold; */
+
+}
+
+.left-content .item .institution {}
+
+.left-content .item .city {
+    /* color: #999; */
+    opacity: .7;
+    /* margin-left: 1rem; */
+
+}
+
+.left-content .item .curator {
+    /* color: #4b4; */
+    opacity: .5;
+    margin-left: 1rem;
+    font-style: italic;
+}
+
+.left-content .item .when {
+    /* opacity: .57; */
+    opacity: .4;
+}
+
+
+.right-content .inner-content {
+    width: 100%;
+}
+
+.right-content .item {
+    margin-bottom: 2rem;
+}
+
+.right-content .item img {
+    box-shadow: 3px 3px 5px #888888;
+    max-width: 100%;
+    width: 100%;
+}
+
+.right-content .item .caption {
+    margin-top: 1rem;
+    font-size: .8rem;
+    opacity: .57;
+}
+
+button {
+    background-color: #555;
+    border: none;
+    color: white;
+    padding: .25rem .5rem;
+    text-align: center;
+    display: inline-block;
+    /* shadow */
+    box-shadow: 2px 2px 1px #888888;
+    margin-right: .5rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4b4;
+}
+
+button.active {
+    background-color: #4b4;
+    opacity: .57;
+
+}
+
+.pagination {
+    display: block;
+    width: 100%;
+}
+
+.about-container p {
+    margin: 0px;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .left-content {
+        width: 100%;
+    }
+
+    .right-content .item,
+    .left-content .item {
+        width: 100%;
+    }
+
+    .column {
+        padding-right: 0;
+        /* Remove padding between columns */
+        margin-bottom: 2rem;
+        /* Add margin at the bottom of each column */
+    }
+}
