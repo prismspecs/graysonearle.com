@@ -1,3 +1,20 @@
+// load the Google Analytics script
+(function () {
+    // Create a script element
+    var gaScript = document.createElement('script');
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-R75WW337R3';
+    gaScript.async = true;
+    document.head.appendChild(gaScript);
+
+    // Initialize Google Analytics
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+    gtag('config', 'G-R75WW337R3');
+})();
+
 // wait for the DOM to load
 document.addEventListener('DOMContentLoaded', function () {
 
