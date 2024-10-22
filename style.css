@@ -174,7 +174,16 @@ button.active {
     margin-bottom: 2rem;
 }
 
-li {
+
+.portfolio-container .images img {
+    max-width: 300px;
+}
+
+.portfolio-container .item {
+    margin-bottom: 3rem;
+}
+
+.portfolio-container .text {
     margin-bottom: 1rem;
 }
 

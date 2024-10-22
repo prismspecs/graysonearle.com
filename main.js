@@ -1,138 +1,151 @@
-// load nav menu from json
-fetch('/json/menu.json')
-    .then(response => response.json())
-    .then(data => {
-        const menuContainer = document.getElementById('menu');
-        // iterate through each item in the JSON data and create corresponding HTML elements
-        data.forEach(item => {
-            const link = document.createElement('a');
-            link.href = item.url;
-            link.textContent = item.title;
-            menuContainer.appendChild(link);
-        });
-
-        // if a link's text matches the data-active attribute of the nav container, add the active class to that link
-        const navContainer = document.querySelector('.nav');
-        const navLinks = navContainer.querySelectorAll('a');
-        navLinks.forEach(link => {
-            if (link.textContent === navContainer.dataset.active) {
-                link.classList.add('active');
-            }
-        });
-
-    })
-    .catch(error => {
-        console.error('Error fetching menu data:', error);
-    });
-
-
-// load data.json for left column
-fetch('/json/events.json')
-    .then(response => response.json())
-    .then(jsonData => {
-        // Loop through the data
-        jsonData.forEach(entry => {
-            // Create a new div element with the class "item"
-            const itemDiv = document.createElement('div');
-            itemDiv.classList.add('item');
-
-            // Create spans for role, what, institution, city, and when
-            const roleSpan = document.createElement('span');
-            roleSpan.classList.add('role');
-            roleSpan.textContent = entry.role;
-
-            const whatSpan = document.createElement('span');
-            whatSpan.classList.add('what');
-            const whatLink = document.createElement('a');
-            whatLink.setAttribute('href', entry.link);
-            whatLink.textContent = entry.what;
-            whatSpan.appendChild(whatLink);
-
-            const institutionSpan = document.createElement('span');
-            institutionSpan.classList.add('institution');
-            institutionSpan.textContent = entry.institution;
-
-            const citySpan = document.createElement('span');
-            citySpan.classList.add('city');
-            citySpan.textContent = entry.city;
-
-            // Create a span for the curator
-            const curatorSpan = document.createElement('span');
-            curatorSpan.classList.add('curator');
-
-            // if it isnt blank
-            if (entry.curator) {
-                curatorSpan.textContent = `curated by ${entry.curator}`;
-            }
-
-
-            const whenSpan = document.createElement('span');
-            whenSpan.classList.add('when');
-
-
-            // change date format
-            const date_start = new Date(entry.startDate);
-            const date_end = new Date(entry.endDate);
-            const options = {
-                year: 'numeric',
-                month: 'short',
-                day: 'numeric'
-            };
-            entry.startDate = date_start.toLocaleDateString('en-US', options);
-            entry.endDate = date_end.toLocaleDateString('en-US', options);
-
-            // if the start and end date are the same
-            if (entry.startDate === entry.endDate) {
-                whenSpan.textContent = entry.startDate;
-            } else {
-                whenSpan.textContent = `${entry.startDate} – ${entry.endDate}`;
-            }
-
-
-            // Append spans to the itemDiv but only if they are not blank
-            if (roleSpan.textContent) {
-                itemDiv.appendChild(roleSpan);
-            }
-            if (whatSpan.textContent) {
-                itemDiv.appendChild(whatSpan);
-            }
-            if (institutionSpan.textContent) {
-                itemDiv.appendChild(institutionSpan);
-            }
-            if (citySpan.textContent) {
-                itemDiv.appendChild(citySpan);
-            }
-            if (curatorSpan) {
-                // itemDiv.appendChild(curatorSpan);
-            }
-            if (whenSpan.textContent) {
-                itemDiv.appendChild(whenSpan);
-            }
-
-
-            // Determine which section to append the itemDiv to
-            let section;
-            const currentDate = new Date();
-            const startDate = new Date(entry.startDate);
-            const endDate = new Date(entry.endDate);
-
-            if (endDate > currentDate) {
-                section = document.querySelector('.now');
-            } else {
-                section = document.querySelector('.past');
-            }
-
-            // Append the itemDiv to the correct section
-            section.appendChild(itemDiv);
-        });
-    });
-
-
-
-
-// -------- NEXT/PREVIOUS pages for the blogroll
-
+// wait for the DOM to load
 document.addEventListener('DOMContentLoaded', function () {
+
+    // --- NAV MENU ---
+
+    // load nav menu from json if it exists
+    const navContainer = document.querySelector('.nav');
+    if (navContainer) {
+        fetch('/json/menu.json')
+            .then(response => response.json())
+            .then(data => {
+                const menuContainer = document.getElementById('menu');
+                // iterate through each item in the JSON data and create corresponding HTML elements
+                data.forEach(item => {
+                    const link = document.createElement('a');
+                    link.href = item.url;
+                    link.textContent = item.title;
+                    menuContainer.appendChild(link);
+                });
+
+                // if a link's text matches the data-active attribute of the nav container, add the active class to that link
+
+                const navLinks = navContainer.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    if (link.textContent === navContainer.dataset.active) {
+                        link.classList.add('active');
+                    }
+                });
+
+            })
+            .catch(error => {
+                console.error('Error fetching menu data:', error);
+            });
+    }
+
+    // --- LEFT COLUMN NOW/PAST EVENTS ---
+
+    // Check if the target sections exist
+
+    const nowSection = document.querySelector('.now');
+    const pastSection = document.querySelector('.past');
+
+    if (nowSection || pastSection) {
+        // Load data.json for left column
+        fetch('/json/events.json')
+            .then(response => response.json())
+            .then(jsonData => {
+                // Loop through the data
+                jsonData.forEach(entry => {
+                    // Create a new div element with the class "item"
+                    const itemDiv = document.createElement('div');
+                    itemDiv.classList.add('item');
+
+                    // Create spans for role, what, institution, city, and when
+                    const roleSpan = document.createElement('span');
+                    roleSpan.classList.add('role');
+                    roleSpan.textContent = entry.role;
+
+                    const whatSpan = document.createElement('span');
+                    whatSpan.classList.add('what');
+                    const whatLink = document.createElement('a');
+                    whatLink.setAttribute('href', entry.link);
+                    whatLink.textContent = entry.what;
+                    whatSpan.appendChild(whatLink);
+
+                    const institutionSpan = document.createElement('span');
+                    institutionSpan.classList.add('institution');
+                    institutionSpan.textContent = entry.institution;
+
+                    const citySpan = document.createElement('span');
+                    citySpan.classList.add('city');
+                    citySpan.textContent = entry.city;
+
+                    // Create a span for the curator
+                    const curatorSpan = document.createElement('span');
+                    curatorSpan.classList.add('curator');
+
+                    // if it isn't blank
+                    if (entry.curator) {
+                        curatorSpan.textContent = `curated by ${entry.curator}`;
+                    }
+
+                    const whenSpan = document.createElement('span');
+                    whenSpan.classList.add('when');
+
+                    // change date format
+                    const date_start = new Date(entry.startDate);
+                    const date_end = new Date(entry.endDate);
+                    const options = {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric'
+                    };
+                    entry.startDate = date_start.toLocaleDateString('en-US', options);
+                    entry.endDate = date_end.toLocaleDateString('en-US', options);
+
+                    // if the start and end date are the same
+                    if (entry.startDate === entry.endDate) {
+                        whenSpan.textContent = entry.startDate;
+                    } else {
+                        whenSpan.textContent = `${entry.startDate} – ${entry.endDate}`;
+                    }
+
+                    // Append spans to the itemDiv but only if they are not blank
+                    if (roleSpan.textContent) {
+                        itemDiv.appendChild(roleSpan);
+                    }
+                    if (whatSpan.textContent) {
+                        itemDiv.appendChild(whatSpan);
+                    }
+                    if (institutionSpan.textContent) {
+                        itemDiv.appendChild(institutionSpan);
+                    }
+                    if (citySpan.textContent) {
+                        itemDiv.appendChild(citySpan);
+                    }
+                    if (curatorSpan.textContent) {
+                        itemDiv.appendChild(curatorSpan);
+                    }
+                    if (whenSpan.textContent) {
+                        itemDiv.appendChild(whenSpan);
+                    }
+
+                    // Determine which section to append the itemDiv to
+                    let section;
+                    const currentDate = new Date();
+                    const startDate = new Date(entry.startDate);
+                    const endDate = new Date(entry.endDate);
+
+                    if (endDate > currentDate) {
+                        section = nowSection;
+                    } else {
+                        section = pastSection;
+                    }
+
+                    // Append the itemDiv to the correct section if the section exists
+                    if (section) {
+                        section.appendChild(itemDiv);
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching events data:', error);
+            });
+    }
+
+
+    // -------- NEXT/PREVIOUS pages for the blogroll
     let startIndex = 0; // Index of the first item to display
     const itemsPerPage = 5; // Number of items to display per page
 
@@ -215,17 +228,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // Fetch the data from JSON file
-    fetch('/json/blogroll.json')
-        .then(response => response.json())
-        .then(data => {
-            // Sort the data based on the date property in descending order
-            data.sort((a, b) => new Date(b.date) - new Date(a.date));
+    if (container) {
+        fetch('/json/blogroll.json')
+            .then(response => response.json())
+            .then(data => {
+                // Sort the data based on the date property in descending order
+                data.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-            // Display the initial set of items
-            displayItems(data);
-        })
-        .catch(error => console.error('Error fetching data:', error));
-
+                // Display the initial set of items
+                displayItems(data);
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
 });
 
 
@@ -240,4 +254,5 @@ document.addEventListener('click', function (event) {
             link.setAttribute('target', '_blank');
         }
     }
+
 });
