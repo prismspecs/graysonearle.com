@@ -154,6 +154,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (section) {
                         section.appendChild(itemDiv);
                     }
+
+                    console.log(nowSection.children.length);
+                    // if there's nothing in the now section, hide it
+                    if (nowSection && nowSection.children.length === 1) {
+                        // get all time-header elements
+                        const timeHeaders = document.querySelectorAll('.time-header');
+
+                        // hide them
+                        timeHeaders.forEach(header => {
+                            header.style.display = 'none';
+                        });
+
+                    }
                 });
             })
             .catch(error => {

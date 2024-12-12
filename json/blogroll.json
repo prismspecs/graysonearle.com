@@ -1,5 +1,12 @@
 [
     {
+        "link": "https://hff-muc.de/de_DE/ki-symp",
+        "imageSrc": "images/munich-ki.jpg",
+        "altText": "an image promoting a talk at the Munich Film University",
+        "caption": "Artist talk at the University of Television and Film Munich",
+        "date": "25 November 2024"
+    },
+    {
         "link": "https://bieff.ro/en/film/why-dont-the-cops-fight-each-other-2/",
         "imageSrc": "images/bucharest.jpg",
         "altText": "an image promoting a screening at the Bucharest International Experimental Film Festival",

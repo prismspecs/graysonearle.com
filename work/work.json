@@ -1,0 +1,34 @@
+{
+    "items": [
+        {
+            "title": "Return to Sender",
+            "link": "return-to-sender.html",
+            "short_description": "Tracking the hidden logistics network of Amazon by buying and returning GPS units. In collaboration with Charmaine Chua.",
+            "thumbnail": "images/rts-02.jpg"
+        },
+        {
+            "title": "Why don't the cops fight each other?",
+            "link": "cops.html",
+            "short_description": "A video about the relationships between police officers in the game Grand Theft Auto V (GTA5). My process of hacking the game demonstrates which aspects of play are completely immutable.",
+            "thumbnail": "images/cops-01.jpg"
+        },
+        {
+            "title": "Amazon Box Returned with a Recording Device Inside",
+            "link": "box.html",
+            "short_description": "An audio recorder hidden in an Amazon return to record the sound of the box in transit all the way to the factory.",
+            "thumbnail": "images/rts-05.jpg"
+        },
+        {
+            "title": "The Illuminator",
+            "link": "illuminator.html",
+            "short_description": "The Illuminator is a collaborative political art project which was created in the context of Occupy Wall Street. As a horizontally-managed project, we own two powerful projectors and two heavily-modified vehicles which are used to generate spectacles and interventions in New York City and beyond.",
+            "thumbnail": "images/illuminator-01.jpg"
+        },
+        {
+            "title": "Poemecia",
+            "link": "poemecia.html",
+            "short_description": "Poetry created by microbes using search terms tracked by the NSA, then live tweeted.",
+            "thumbnail": "images/poemecia-02.jpg"
+        }
+    ]
+}

@@ -23,6 +23,10 @@ h2 {
     font-size: 1rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .nav a {
     margin-right: 1rem;
     font-family: "Inconsolata", monospace;
@@ -174,6 +178,37 @@ button.active {
     margin-bottom: 2rem;
 }
 
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.work-container .work-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    padding: 1rem;
+    flex: 1 1 45%;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 300px;
+}
+
+.work-item {
+    text-decoration: none;
+}
+
+.work-container .work-item img {
+    width: 100%;
+    height: auto;
+    margin-top: 0.5rem;
+}
+
+.project-container {
+    max-width: 800px;
+}
 
 .portfolio-container .images img {
     max-width: 300px;
