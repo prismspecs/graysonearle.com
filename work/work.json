@@ -19,6 +19,12 @@
             "thumbnail": "images/rts-05.jpg"
         },
         {
+            "title": "Scrivener",
+            "link": "scrivener.html",
+            "short_description": "A text-based, AI-assisted role-playing game on Discord, blending D&D mechanics and DAO principles to build a future of resistance and collaboration.",
+            "thumbnail": "images/scrivener-01.jpg"
+        },
+        {
             "title": "The Illuminator",
             "link": "illuminator.html",
             "short_description": "The Illuminator is a collaborative political art project which was created in the context of Occupy Wall Street. As a horizontally-managed project, we own two powerful projectors and two heavily-modified vehicles which are used to generate spectacles and interventions in New York City and beyond.",

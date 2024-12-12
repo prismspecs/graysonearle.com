@@ -22,6 +22,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // load nav menu from json if it exists
     const navContainer = document.querySelector('.nav');
+    // insert h1
+    const h1 = document.createElement('h1');
+    h1.textContent = 'grayson earle';
+    navContainer.prepend(h1);
     if (navContainer) {
         fetch('/json/menu.json')
             .then(response => response.json())
@@ -270,6 +274,12 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .catch(error => console.error('Error fetching data:', error));
     }
+
+    // make all links open in a new tab
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.setAttribute('target', '_blank');
+    });
 });
 
 
