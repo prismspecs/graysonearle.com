@@ -12,6 +12,10 @@ body {
     box-sizing: border-box;
 }
 
+audio {
+    margin-bottom: 1em;
+}
+
 h1 {
     font-size: 2rem;
     margin: 0;
