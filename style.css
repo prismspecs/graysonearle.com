@@ -190,10 +190,11 @@ button.active {
 }
 
 .work-container .work-item {
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    /* background-color: #f9f9f9;
+    border: 1px solid #ddd; */
     /* border-radius: 8px; */
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-right: 2rem;
     flex: 1 1 45%;
     box-sizing: border-box;
     max-width: 100%;
