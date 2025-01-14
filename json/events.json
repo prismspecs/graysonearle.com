@@ -1,6 +1,13 @@
 [
     {
         "role": "artist talk",
+        "institution": "University of Kassel",
+        "startDate": "2025-01-14",
+        "endDate": "2025-01-14",
+        "link": "https://kunsthochschulekassel.de/willkommen.html"
+    },
+    {
+        "role": "artist talk",
         "what": "Critical Automation",
         "institution": "University of Television and Film Munich",
         "startDate": "2024-11-25",
