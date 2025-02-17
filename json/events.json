@@ -1,5 +1,13 @@
 [
     {
+        "role": "exhibition",
+        "what": "eXMeLab",
+        "institution": "Arizona State University",
+        "startDate": "2025-03-19",
+        "endDate": "2025-04-05",
+        "link": "https://newcollege.asu.edu/artspacewest"
+    },
+    {
         "role": "artist talk",
         "what": "Simulations as Art",
         "institution": "University of Kassel",
