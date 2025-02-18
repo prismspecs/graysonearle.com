@@ -1,5 +1,13 @@
 [
     {
+        "role": "artist talk",
+        "what": "Arts and Games Spring Seminar",
+        "institution": "Tampere University",
+        "startDate": "2025-03-26",
+        "endDate": "2025-03-27",
+        "link": "https://springseminar.org/2025-programme/"
+    },
+    {
         "role": "exhibition",
         "what": "eXMeLab",
         "institution": "Arizona State University",
