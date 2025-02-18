@@ -80,8 +80,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     const whatSpan = document.createElement('span');
                     whatSpan.classList.add('what');
                     const whatLink = document.createElement('a');
-                    const encodedLink = encodeURI(entry.link).replace(/%20/g, ' ');
-                    whatLink.setAttribute('href', encodedLink);
+                    const safeLink = decodeURIComponent(entry.link);
+                    whatLink.setAttribute('href', safeLink);
                     whatLink.textContent = entry.what;
                     whatSpan.appendChild(whatLink);
 
@@ -199,8 +199,8 @@ document.addEventListener('DOMContentLoaded', function () {
             divItem.classList.add('item');
 
             const anchor = document.createElement('a');
-            const encodedLink = encodeURI(item.link).replace(/%20/g, ' ');
-            anchor.setAttribute('href', encodedLink);
+            const safeLink = decodeURIComponent(item.link);
+            anchor.setAttribute('href', safeLink);
 
             const image = document.createElement('img');
             image.setAttribute('src', item.imageSrc);
