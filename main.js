@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function () {
             divItem.classList.add('item');
 
             const anchor = document.createElement('a');
-            anchor.setAttribute('href', item.link);
+            anchor.setAttribute('href', encodeURIComponent(item.link));
 
             const image = document.createElement('img');
             image.setAttribute('src', item.imageSrc);
