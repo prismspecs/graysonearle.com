@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const whatSpan = document.createElement('span');
                     whatSpan.classList.add('what');
                     const whatLink = document.createElement('a');
-                    whatLink.setAttribute('href', entry.link);
+                    whatLink.setAttribute('href', encodeURI(entry.link));
                     whatLink.textContent = entry.what;
                     whatSpan.appendChild(whatLink);
 
