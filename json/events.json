@@ -1,5 +1,21 @@
 [
     {
+        "role": "exhibition",
+        "what": "jurassic park",
+        "institution": "Media Art Exploration (NYC)",
+        "startDate": "2025-03-28",
+        "endDate": "2025-03-28",
+        "link": "https://learn.newmedia.dog/courses/embodied-interaction/"
+    },
+    {
+        "role": "artist talk",
+        "what": "Art as Intervention",
+        "institution": "Aalto University",
+        "startDate": "2025-03-28",
+        "endDate": "2025-03-28",
+        "link": "https://www.aalto.fi/en/people/matti-niinimaki"
+    },
+    {
         "role": "artist talk",
         "what": "Arts and Games Spring Seminar",
         "institution": "Tampere University",

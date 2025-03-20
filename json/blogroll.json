@@ -1,5 +1,12 @@
 [
     {
+        "link": "https://springseminar.org/2025-programme/",
+        "imageSrc": "images/tampere.jpg",
+        "altText": "an image promoting a seminar for which I am an expert commentator",
+        "caption": "Keynote and Commentator at Spring Seminar 2025 at Tampere University",
+        "date": "26 March 2025"
+    },
+    {
         "link": "https://hff-muc.de/de_DE/ki-symp",
         "imageSrc": "images/munich-ki.jpg",
         "altText": "an image promoting a talk at the Munich Film University",
