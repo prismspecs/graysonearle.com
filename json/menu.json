@@ -6,5 +6,9 @@
     {
         "title": "about",
         "url": "/about"
+    },
+    {
+        "title": "texts",
+        "url": "/texts.html"
     }
 ]
