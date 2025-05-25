@@ -1,8 +1,16 @@
 [
     {
+        "role": "panel",
+        "what": "funding the commons",
+        "institution": "Funding the Commons",
+        "startDate": "2025-06-10",
+        "endDate": "2025-06-11",
+        "link": "https://www.fundingthecommons.io/berlin-2025"
+    },
+    {
         "role": "exhibition",
         "what": "jurassic park",
-        "institution": "Media Art Exploration (NYC)",
+        "institution": "Media Art Exploration at the Centre for Performance Research (NYC)",
         "startDate": "2025-05-17",
         "endDate": "2025-05-18",
         "link": "https://mediaartexploration.org/program/juraitchpark/"
