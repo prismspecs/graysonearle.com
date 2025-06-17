@@ -1,5 +1,13 @@
 [
     {
+        "role": "exhibition",
+        "what": "Game Worlds",
+        "institution": "Australian Centre for the Moving Image (ACMI)",
+        "startDate": "2025-09-18",
+        "endDate": "2026-02-08",
+        "link": "https://www.acmi.net.au/whats-on/game-worlds/"
+    },
+    {
         "role": "panel",
         "what": "Tech, Solidarity, and Human Rights",
         "institution": "Funding the Commons",

@@ -1,5 +1,12 @@
 [
     {
+        "link": "https://www.youtube.com/watch?v=NsE8wTSEhEY",
+        "imageSrc": "images/acmi.jpg",
+        "altText": "a promotion for an upcoming exhibition at ACMI",
+        "caption": "a promotion for an upcoming exhibition at ACMI",
+        "date": "18 September 2025"
+    },
+    {
         "link": "https://www.1014.nyc/events/understanding-the-brains-human-machine",
         "imageSrc": "images/1014.jpg",
         "altText": "a photograph from a live interview I did with my collaborator Johannes Büttner along with Tal Linzen",
