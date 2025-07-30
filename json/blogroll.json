@@ -1,5 +1,12 @@
 [
     {
+        "link": "https://www.acmi.net.au/whats-on/game-worlds/",
+        "imageSrc": "images/acmi2.png",
+        "altText": "tickets for ACMI's Game Worlds exhibition in Melbourne on sale now",
+        "caption": "tickets for ACMI's Game Worlds exhibition in Melbourne on sale now",
+        "date": "18 September 2025"
+    },
+    {
         "link": "https://www.youtube.com/watch?v=NsE8wTSEhEY",
         "imageSrc": "images/acmi.jpg",
         "altText": "a promotion for an upcoming exhibition at ACMI",
