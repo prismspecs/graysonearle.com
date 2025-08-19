@@ -8,6 +8,30 @@
         "link": "https://www.acmi.net.au/whats-on/game-worlds/"
     },
     {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "argos centre (Brussels)",
+        "startDate": "2025-09-17",
+        "endDate": "2025-09-17",
+        "link": "https://visit.argosarts.org/event/magical-realism/"
+    },
+    {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "Spore Initiative (Berlin)",
+        "startDate": "2025-08-31",
+        "endDate": "2025-08-31",
+        "link": "https://spore-initiative.org/en/programming/participate/VideoClub-World-presents-Theres-No-Cloud"
+    },
+    {
+        "role": "screening",
+        "what": "Why don't the cops fight each other?",
+        "institution": "TICK TACK (Antwerp)",
+        "startDate": "2025-08-31",
+        "endDate": "2025-09-06",
+        "link": "https://ticktack.be/cinema"
+    },
+    {
         "role": "panel",
         "what": "Tech, Solidarity, and Human Rights",
         "institution": "Funding the Commons",
