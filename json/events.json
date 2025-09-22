@@ -8,6 +8,30 @@
         "link": "https://www.acmi.net.au/whats-on/game-worlds/"
     },
     {
+        "role": "exhibition",
+        "what": "TBA",
+        "institution": "Hochschule für Bildende Künste Braunschweig",
+        "startDate": "2026-01-24",
+        "endDate": "2026-02-14",
+        "link": "https://www.hbk-bs.de/hochschule/stipendienprogramme/braunschweig-projects/"
+    },
+    {
+        "role": "workshop",
+        "what": "AI workshop title TBA",
+        "institution": "Bethanien (Berlin)",
+        "startDate": "2025-10-31",
+        "endDate": "2026-11-04",
+        "link": ""
+    },
+    {
+        "role": "screening",
+        "what": "'Openings' film program",
+        "institution": "Kunstverein Braunschweig",
+        "startDate": "2025-10-01",
+        "endDate": "2025-10-01",
+        "link": "https://kunstvereinbraunschweig.de/"
+    },
+    {
         "role": "screening",
         "what": "Why don't the cops fight each other?",
         "institution": "argos centre (Brussels)",
