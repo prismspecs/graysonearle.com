@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         section.appendChild(itemDiv);
                     }
 
-                    console.log(nowSection.children.length);
+                    //console.log(nowSection.children.length);
                     // if there's nothing in the now section, hide it
                     if (nowSection && nowSection.children.length === 1) {
                         // get all time-header elements
