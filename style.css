@@ -78,7 +78,7 @@ a:active {
 
 .left-content {
     margin-right: 4rem;
-    width: 552px;
+    width: 690px;
     /* max-width: 414px; */
 }
 
@@ -291,5 +291,9 @@ button.active {
         /* Remove padding between columns */
         margin-bottom: 2rem;
         /* Add margin at the bottom of each column */
+    }
+
+    .past {
+        display: none;
     }
 }
