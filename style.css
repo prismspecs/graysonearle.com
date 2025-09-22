@@ -298,16 +298,12 @@ button.active {
     }
 
     .pagination {
-        margin-bottom: 1rem;
-    }
-
-    #pageNumbers {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
     }
 
-    #pageNumbers button {
+    .pagination button {
         padding: .5rem .75rem;
     }
 }
