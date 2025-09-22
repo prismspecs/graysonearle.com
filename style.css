@@ -296,4 +296,19 @@ button.active {
     .past {
         display: none;
     }
+
+    .pagination {
+        margin-bottom: 1rem;
+    }
+
+    #pageNumbers {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #pageNumbers button {
+        padding: .5rem .75rem;
+    }
 }
