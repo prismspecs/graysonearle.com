@@ -308,6 +308,6 @@ button.active {
     }
 
     .pagination button {
-        padding: .5rem .75rem;
+        padding: 1rem;
     }
 }
