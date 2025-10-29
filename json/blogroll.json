@@ -1,5 +1,12 @@
 [
     {
+        "link": "https://ticktack.be/exhibitions/sojourners-curated-by-allen-golder-carpenter",
+        "imageSrc": "images/ticktackt2.jpg",
+        "altText": "photographic documentation of 'Why don't the cops fight each other?' screening as part of TICK TACK's Sojourners exhibition screening series in Antwerp",
+        "caption": "photographic documentation of 'Why don't the cops fight each other?' screening as part of TICK TACK's Sojourners exhibition screening series in Antwerp",
+        "date": "28 September 2025"
+    },
+    {
         "link": "https://www.the-berliner.com/politics/why-is-abortion-still-a-crime-in-germany/",
         "imageSrc": "images/abortion-projections.jpg",
         "altText": "an article featuring a video projection I did with an abortion rights group in Berlin",
