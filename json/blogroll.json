@@ -1,6 +1,13 @@
 [
     {
         "link": "https://hyphastudios.com/raisa-desypri-2/",
+        "imageSrc": "images/hypha.jpg",
+        "altText": "photo documentation of my work in Processing Process at HYPHA, London, curated by Raisa Desypri",
+        "caption": "photo documentation of my work in Processing Process at HYPHA, London",
+        "date": "7 January 2026"
+    },
+    {
+        "link": "https://hyphastudios.com/raisa-desypri-2/",
         "imageSrc": "images/processing-process.jpg",
         "altText": "an image promoting an upcoming exhibition in London",
         "caption": "upcoming exhibition in London, 12 December 2025 – 17 January 2026",
