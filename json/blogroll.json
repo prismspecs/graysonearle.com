@@ -1,5 +1,19 @@
 [
     {
+        "link": "https://modal.art",
+        "imageSrc": "images/modal-gray-area.png",
+        "altText": "promotional image for the Modal and Gray Area group exhibition in San Francisco",
+        "caption": "I am participating in an upcoming group exhibition presented by Modal and Gray Area in San Francisco, October 26–30, 2026.",
+        "date": "29 August 2026"
+    },
+    {
+        "link": "https://www.akademie-solitude.de/de/call-for-web-residencies-no-22-ignore-all-previous-instructions/",
+        "imageSrc": "images/solitude-webres-22.gif",
+        "altText": "promotional banner for Akademie Schloss Solitude Web Residencies No. 22: Ignore All Previous Instructions curated by !Mediengruppe Bitnik",
+        "caption": "I will continue my role at Akademie Schloss Solitude working with the web residents, this time with !Mediengruppe Bitnik for »Ignore All Previous Instructions«",
+        "date": "8 August 2026"
+    },
+    {
         "link": "https://learn.graysonearle.com/#unity-trust",
         "imageSrc": "images/unity-class-trust.jpg",
         "altText": "promotional image for a 4-part course on using Unity for artists",

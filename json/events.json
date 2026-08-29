@@ -1,5 +1,13 @@
 [
     {
+        "role": "exhibition",
+        "what": "Modal × Gray Area",
+        "institution": "Gray Area (San Francisco)",
+        "startDate": "2026-10-26",
+        "endDate": "2026-10-30",
+        "link": "https://modal.art"
+    },
+    {
         "role": "talk & paper",
         "what": "XVI Lisbon Summer School for the Study of Cultures: Disobedience",
         "institution": "Universidade Católica Portuguesa",
