@@ -1,0 +1,43 @@
+/* ===================================================================
+   A FLY LIKE THEE
+   Olivier Jonvaux, Web Residencies 22, Akademie Schloss Solitude
+
+   Every rule is scoped to #fly-like-thee and the flt- prefix, so nothing
+   here reaches the host site, and the host site's own classes never meet
+   the flies.
+   =================================================================== */
+
+/* The layer never intercepts a click: the site stays fully usable. */
+#fly-like-thee{
+  position:fixed;top:0;right:0;bottom:0;left:0;
+  pointer-events:none;
+  overflow:hidden;
+  z-index:2147483000;
+  contain:strict;
+}
+#fly-like-thee .flt-fly{
+  position:absolute;top:0;left:0;
+  margin:0;padding:0;border:0;
+  background:none;background-repeat:no-repeat;
+  transform-origin:50% 50%;
+  pointer-events:none;
+  isolation:isolate;
+}
+#fly-like-thee .flt-fly>i{
+  position:absolute;top:0;right:0;bottom:0;left:0;display:block;
+  margin:0;padding:0;border:0;
+  background-repeat:no-repeat;pointer-events:none;
+}
+/* Pale wings stay visible over a light ground and vanish over the body. */
+#fly-like-thee .flt-fly>.flt-fw{mix-blend-mode:multiply}
+
+/* Labels, for showing the work: robot or character, and state above it. */
+#fly-like-thee .flt-fly[data-trait]::before,
+#fly-like-thee .flt-fly[data-state]::after{
+  position:absolute;left:50%;bottom:105%;transform:translateX(-50%);
+  font:10px/1 Helvetica,Arial,sans-serif;color:#000;
+  white-space:nowrap;
+}
+#fly-like-thee .flt-fly[data-trait]::before{content:attr(data-trait)}
+#fly-like-thee .flt-fly[data-state]::after{content:attr(data-state)}
+#fly-like-thee .flt-fly[data-trait][data-state]::after{bottom:calc(105% + 12px)}

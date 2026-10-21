@@ -1,0 +1,25 @@
+{
+  "active": true,
+  "interval": 60,
+  "life": 600,
+  "flies": [
+    {
+      "id": "gptbot",
+      "name": "GPTBot",
+      "operator": "OpenAI",
+      "category": "ai",
+      "verified": "test",
+      "hits": 1,
+      "ago": 30
+    },
+    {
+      "id": "claudebot",
+      "name": "ClaudeBot",
+      "operator": "Anthropic",
+      "category": "ai",
+      "verified": "test",
+      "hits": 1,
+      "ago": 60
+    }
+  ]
+}

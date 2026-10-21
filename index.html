@@ -55,6 +55,80 @@
         </div>
 
     </div>
+
+    <!-- ============================================================ -->
+    <!-- Olivier Jonvaux: A Fly Like Thee (Desktop Only Demo)         -->
+    <!-- To revert: delete this block and the /fly-like-thee/ folder. -->
+    <!-- ============================================================ -->
+    <link rel="stylesheet" href="fly-like-thee/css/fly.css">
+    <style>
+        .fly-residency-notice {
+            position: fixed;
+            top: 1rem;
+            right: 1.5rem;
+            max-width: 290px;
+            padding: 8px 12px;
+            background: rgba(255, 255, 255, 0.95);
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            font-family: "Inconsolata", monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            color: #666;
+            z-index: 2147483001;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .fly-residency-notice a {
+            color: #333;
+            text-decoration: underline;
+        }
+
+        .fly-residency-notice a:hover {
+            color: #000;
+        }
+
+        /* Desktop only: hide notice and flies on mobile/narrow screens */
+        @media screen and (max-width: 768px) {
+            .fly-residency-notice,
+            #fly-like-thee {
+                display: none !important;
+            }
+        }
+    </style>
+
+    <div class="fly-residency-notice">
+        🪰 The flies on this page are part of <em><a href="https://a-fly-like-thee.webresidencies.akademie-solitude.de" target="_blank" rel="noopener noreferrer">A Fly Like Thee</a></em>, an Akademie Schloss Solitude Web Residency project by Olivier Jonvaux.
+    </div>
+
+    <script>
+        if (window.innerWidth > 768) {
+            const params = new URLSearchParams(window.location.search);
+            const testBot = params.get('fly-test');
+            let endpoint = 'fly-like-thee/flies.json';
+            if (testBot) {
+                const customData = {
+                    active: true,
+                    interval: 60,
+                    life: 600,
+                    flies: [{ id: 'test-' + testBot.toLowerCase(), name: testBot, operator: 'Test', category: 'ai', verified: 'test', hits: 1, ago: 5 }]
+                };
+                const blob = new Blob([JSON.stringify(customData)], { type: 'application/json' });
+                endpoint = URL.createObjectURL(blob);
+            }
+            window.FLY_LIKE_THEE = {
+                endpoint: endpoint,
+                path: window.location.pathname || '/',
+                interval: 60,
+                sheet: 'fly-like-thee/img/fly_sheet.webp',
+                wings: 'fly-like-thee/img/fly_wings.webp'
+            };
+            const flyScript = document.createElement('script');
+            flyScript.src = 'fly-like-thee/js/fly.js';
+            document.body.appendChild(flyScript);
+        }
+    </script>
+    <!-- End Olivier Jonvaux: A Fly Like Thee -->
 </body>
 
 </html>
