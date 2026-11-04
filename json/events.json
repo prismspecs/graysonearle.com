@@ -1,11 +1,19 @@
 [
     {
+        "role": "residency",
+        "what": "LAB 5 The Mechanics of Truth",
+        "institution": "Medialab Matadero (Madrid)",
+        "startDate": "2026-11-12",
+        "endDate": "2026-11-28",
+        "link": "https://www.medialab-matadero.es/en/programs/lab-5-mechanics-truth"
+    },
+    {
         "role": "exhibition",
         "what": "Modal × Gray Area",
         "institution": "Gray Area (San Francisco)",
-        "startDate": "2026-10-26",
-        "endDate": "2026-10-30",
-        "link": "https://modal.art"
+        "startDate": "2026-10-28",
+        "endDate": "2026-11-02",
+        "link": "https://grayarea.org/exhibitions/scaling-intelligence-modal-commissions/"
     },
     {
         "role": "talk & paper",

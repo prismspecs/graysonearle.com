@@ -1,9 +1,16 @@
 [
     {
-        "link": "https://modal.art",
+        "link": "https://www.medialab-matadero.es/en/programs/lab-5-mechanics-truth",
+        "imageSrc": "images/medialab-matadero.png",
+        "altText": "promotional banner for Medialab Matadero LAB 5 The Mechanics of Truth",
+        "caption": "I will be participating in LAB 5: The Mechanics of Truth at Medialab Matadero in Madrid.",
+        "date": "4 November 2026"
+    },
+    {
+        "link": "https://grayarea.org/exhibitions/scaling-intelligence-modal-commissions/",
         "imageSrc": "images/modal-gray-area.png",
         "altText": "promotional image for the Modal and Gray Area group exhibition in San Francisco",
-        "caption": "I am participating in an upcoming group exhibition presented by Modal and Gray Area in San Francisco, October 26–30, 2026.",
+        "caption": "I am participating in an upcoming group exhibition presented by Modal and Gray Area in San Francisco, October 28 – November 2, 2026.",
         "date": "29 August 2026"
     },
     {
