@@ -265,13 +265,18 @@
     max-width: 46em;
 }
 
-.work-cap {
-    display: block;
+/* images in a row with captions of their own: each caption under its image, as wide as it */
+.work-figure .work-caps {
+    display: flex;
+    gap: var(--gap);
+    max-width: none;
+    font-size: .8125rem;
+    line-height: 1.45;
 }
 
-/* several images in a row: one caption each, in order, a little apart */
-.work-cap + .work-cap {
-    margin-top: .4rem;
+.work-cap {
+    min-width: 0;
+    padding-right: .75rem;
 }
 
 .work-video {
@@ -390,10 +395,6 @@
         margin-top: .45rem;
         font-size: .75rem;
         line-height: 1.45;
-    }
-
-    .work-cap + .work-cap {
-        margin-top: .25rem;
     }
 
     .work-media > :not(.work-lead) {
