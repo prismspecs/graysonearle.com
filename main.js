@@ -277,9 +277,12 @@ document.addEventListener('DOMContentLoaded', function () {
             .catch(error => console.error('Error fetching data:', error));
     }
 
-    // make all links open in a new tab
+    // make all links open in a new tab, except links within this site from
+    // the /work/ pages, which are browsed one after another in the same tab
+    const inWork = location.pathname.startsWith('/work/');
     const links = document.querySelectorAll('a');
     links.forEach(link => {
+        if (inWork && link.origin === location.origin) return;
         link.setAttribute('target', '_blank');
     });
 });

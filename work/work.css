@@ -1,0 +1,882 @@
+/* /work/: the index and the project pages. The pages themselves are generated
+   (portfolio repo, website-generator.js); this file is written by hand.
+   The wrapper is .work-frame, not .work-container: style.css still has a
+   .work-container rule (a flex row) from the January 2025 work page. */
+
+:root {
+    --ink: #555;          /* the site's body grey */
+    --ink-strong: #333;
+    --quiet: #767676;     /* captions, sources: the lightest grey that stays readable */
+    --rule: #e6e6e6;
+    --violet: #6b6bc1;    /* the home page's role colour, dark enough for small type */
+    --gap: 4px;           /* between images in a row or strip */
+    --text-col: minmax(21rem, 30rem);
+    --col-gap: clamp(2.5rem, 4vw, 4.5rem);
+}
+
+.container.work-frame {
+    max-width: 1680px;
+}
+
+.work-frame :focus-visible {
+    outline: 2px solid var(--violet);
+    outline-offset: 2px;
+}
+
+.work-index-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+.nobr {
+    white-space: nowrap;
+}
+
+/* ---- index: years down the left, each work a row with its images as a strip ---- */
+
+.work-year-group {
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    padding: 1.25rem 0 1.5rem;
+    border-top: 1px solid var(--rule);
+}
+
+.work-year-group:first-of-type {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.work-year-label {
+    margin: 0;
+    padding-top: .1rem;
+    font-family: "Inconsolata", monospace;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--violet);
+}
+
+.work-year-group ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1.25rem;
+}
+
+.work-entry {
+    display: grid;
+    grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+    gap: var(--col-gap);
+    align-items: start;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.work-entry-text {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.work-entry-title {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--ink-strong);
+}
+
+.work-entry-medium {
+    font-size: .875rem;
+    line-height: 1.45;
+    color: var(--quiet);
+}
+
+.work-entry:hover .work-entry-title,
+.work-entry:focus-visible .work-entry-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.work-strip {
+    display: flex;
+    gap: var(--gap);
+    height: 84px;
+    overflow: hidden;
+    /* the strip runs off the right edge rather than ending on a hard cut */
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 4rem), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 4rem), transparent);
+}
+
+.work-strip img {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    flex: none;
+    background: #f2f2f2;
+}
+
+/* ---- a project page: the text on the left, the images on the right (as on the home page) ---- */
+
+.work-page {
+    display: grid;
+    grid-template-columns: var(--text-col) minmax(0, 1fr);
+    column-gap: var(--col-gap);
+    align-items: start;
+}
+
+.work-text {
+    font-size: 1.0625rem;
+}
+
+.work-name {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1.85rem;
+    line-height: 1.15;
+    letter-spacing: -.01em;
+    color: var(--ink-strong);
+    margin: 0 0 .75rem;
+    text-wrap: balance;
+}
+
+.work-subtitle {
+    font-style: italic;
+    line-height: 1.45;
+    margin: -.25rem 0 1rem;
+}
+
+.work-label {
+    margin: 0 0 1.75rem;
+    line-height: 1.5;
+}
+
+.work-year {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    color: var(--violet);
+}
+
+.work-place {
+    color: var(--quiet);
+}
+
+.work-prose p {
+    line-height: 1.62;
+    margin: 0 0 1em;
+}
+
+.work-links {
+    line-height: 1.6;
+    margin: 1.5rem 0 0;
+}
+
+.work-list {
+    font-size: 1rem;
+}
+
+.work-list h2 {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--ink-strong);
+    margin: 2.25rem 0 .75rem;
+}
+
+.work-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.work-list li {
+    margin-bottom: .75rem;
+    line-height: 1.4;
+}
+
+.work-source {
+    display: block;
+    font-size: .875rem;
+    color: var(--quiet);
+}
+
+.work-media {
+    display: grid;
+    gap: 2.5rem;
+    min-width: 0;
+}
+
+.work-figure {
+    margin: 0;
+}
+
+.work-figure audio {
+    display: block;
+    width: 100%;
+}
+
+.work-figure video {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    max-height: 82vh;
+}
+
+.work-row {
+    display: flex;
+    gap: var(--gap);
+}
+
+/* each image's flex-grow is its aspect ratio, so a row shares one height */
+.work-img {
+    display: block;
+    min-width: 0;
+    cursor: zoom-in;
+}
+
+.work-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+    background: #f2f2f2;
+}
+
+/* an image on its own: as wide as the column, but never taller than most of the screen */
+.work-img:only-child {
+    flex: none !important;
+    max-width: 100%;
+}
+
+.work-img:only-child img {
+    width: auto;
+    max-width: 100%;
+    max-height: 82vh;
+}
+
+.work-figure figcaption {
+    margin-top: .6rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    color: var(--quiet);
+    max-width: 46em;
+}
+
+.work-cap {
+    display: block;
+}
+
+/* several images in a row: one caption each, in order, a little apart */
+.work-cap + .work-cap {
+    margin-top: .4rem;
+}
+
+.work-video {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: #000;
+}
+
+.work-video iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ---- narrower screens: one column ---- */
+
+@media (max-width: 960px) {
+    /* One column: the title, then the lead image, then the label and text,
+       then the rest of the images. The two column wrappers dissolve so their
+       contents can be reordered. */
+    .work-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .work-text,
+    .work-media {
+        display: contents;
+    }
+
+    .work-text > * {
+        order: 1;
+    }
+
+    .work-name,
+    .work-subtitle,
+    .work-lead {
+        order: 0;
+    }
+
+    .work-media > :not(.work-lead) {
+        order: 2;
+        margin-top: 2.5rem;
+    }
+
+    .work-lead {
+        margin-bottom: 1.5rem;
+    }
+
+    /* image captions show in the lightbox instead; a video's or audio clip's stays */
+    .work-row + figcaption {
+        display: none;
+    }
+
+    .work-lead .work-img:only-child img {
+        max-height: 70vh;
+    }
+
+    /* in the one-column flex layout the player needs a definite width, or its
+       16:9 box (which has no content of its own) collapses to nothing */
+    .work-video {
+        width: 100%;
+        flex: none;
+    }
+
+    .work-prose,
+    .work-label {
+        max-width: 36em;
+    }
+
+    .work-entry {
+        grid-template-columns: minmax(0, 1fr);
+        gap: .6rem;
+    }
+
+    .work-strip {
+        height: 72px;
+    }
+}
+
+@media (max-width: 560px) {
+    .container.work-frame {
+        padding: 1rem;
+    }
+
+    .work-year-group {
+        grid-template-columns: minmax(0, 1fr);
+        gap: .6rem;
+    }
+
+    .work-text {
+        font-size: .9375rem;
+    }
+
+    .work-name {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .work-label {
+        margin-bottom: 1.25rem;
+    }
+
+    /* a narrow column justifies cleanly only if long words can break */
+    .work-prose p {
+        line-height: 1.55;
+        text-align: justify;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+        hyphenate-limit-chars: 7 3 3;   /* only words of 7+ letters, 3 on each side */
+    }
+
+    .work-figure figcaption {
+        margin-top: .45rem;
+        font-size: .75rem;
+        line-height: 1.45;
+    }
+
+    .work-cap + .work-cap {
+        margin-top: .25rem;
+    }
+
+    .work-media > :not(.work-lead) {
+        margin-top: 2rem;
+    }
+}
+
+/* ---- lightbox (lightbox.js): the image as large as the screen allows, its caption beneath,
+        and faint controls that come up on hover or focus ---- */
+
+.lb-open {
+    overflow: hidden;
+}
+
+.lb {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.25rem 4rem 1.75rem;
+    background: #fff;
+    animation: lb-in .14s ease-out;
+}
+
+.lb[hidden] {
+    display: none;
+}
+
+@keyframes lb-in {
+    from { opacity: 0; }
+}
+
+.lb-figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.lb-img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: calc(100vh - 9rem);
+    max-height: calc(100dvh - 9rem);
+    object-fit: contain;
+}
+
+.lb-cap {
+    margin-top: .8rem;
+    max-width: 44em;
+    font-size: .8125rem;
+    line-height: 1.5;
+    color: var(--quiet);
+    text-align: center;
+    text-wrap: balance;
+}
+
+.lb-cap:empty {
+    display: none;
+}
+
+.lb-bar {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.lb-btn,
+.lb-btn:hover {   /* style.css gives every button a shadow and a green hover */
+    background: none;
+    box-shadow: none;
+}
+
+.lb-btn {
+    position: absolute;
+    pointer-events: auto;
+    padding: .4rem .8rem;
+    border: 0;
+    font: 300 2.25rem/1 "Karla", sans-serif;
+    color: var(--ink-strong);
+    opacity: .28;
+    cursor: pointer;
+    transition: opacity .15s;
+}
+
+.lb-btn:hover,
+.lb-btn:focus-visible {
+    opacity: .85;
+}
+
+.lb-btn:focus-visible {
+    outline: 2px solid var(--violet);
+    outline-offset: 0;
+}
+
+.lb-prev,
+.lb-next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.lb-prev { left: .5rem; }
+.lb-next { right: .5rem; }
+
+.lb-close {
+    top: .6rem;
+    right: .6rem;
+    font-size: 2rem;
+}
+
+.lb-count {
+    position: absolute;
+    top: 1.35rem;
+    left: 1.5rem;
+    font: 600 .75rem/1 "Inconsolata", monospace;
+    color: var(--quiet);
+}
+
+.lb-single .lb-bar {
+    display: none;
+}
+
+/* phones: the image runs edge to edge, and every control sits along the bottom
+   within reach of the thumb: the arrows and count in the middle, × on the right */
+@media (max-width: 560px) {
+    .lb {
+        padding: 1rem .5rem calc(4rem + env(safe-area-inset-bottom));
+    }
+
+    .lb-img {
+        max-height: calc(100vh - 9rem);
+        max-height: calc(100dvh - 9rem - env(safe-area-inset-bottom));
+    }
+
+    .lb-cap {
+        padding: 0 .75rem;
+        font-size: .75rem;
+    }
+
+    .lb-bar {
+        inset: auto auto calc(.5rem + env(safe-area-inset-bottom)) 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+    }
+
+    .lb-close {
+        top: auto;
+        bottom: calc(.5rem + env(safe-area-inset-bottom));
+        right: .5rem;
+    }
+
+    .lb-bar .lb-btn,
+    .lb-count {
+        position: static;
+        transform: none;
+    }
+
+    .lb-btn {
+        opacity: .4;
+    }
+
+    .lb-count {
+        padding: 0 .1rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .lb {
+        animation: none;
+    }
+}
+
+/* ==== index layouts: portfolios/website.json "index" picks one (plates); the others are kept
+        for `website-generator.js --variants`, which writes them all side by side ==== */
+
+/* -- plates (the index in use): each work's lead image in justified rows, its title beneath.
+      Each plate grows by its aspect ratio, so a row shares one height. -- */
+
+.idx-plates {
+    --plate-h: clamp(200px, 19vw, 300px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.75rem 1.25rem;
+}
+
+.idx-plates::after {   /* the last row keeps its natural size instead of stretching */
+    content: "";
+    flex: 999 1 0;
+}
+
+.plate {
+    flex: var(--ar) 1 calc(var(--ar) * var(--plate-h));
+    min-width: 0;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.plate img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: var(--ar);
+    /* a row that only fits a couple of wide images would grow tall; it's cropped a little instead */
+    max-height: calc(var(--plate-h) * 1.3);
+    object-fit: cover;
+    background: #f2f2f2;
+}
+
+.plate-title {
+    display: block;
+    margin-top: .7rem;
+    padding-right: .5rem;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.35;
+    color: var(--ink-strong);
+    text-wrap: balance;
+}
+
+.plate:hover .plate-title,
+.plate:focus-visible .plate-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+/* -- preview: a list beside a large image of whichever work is pointed at -- */
+
+.idx-preview {
+    display: grid;
+    grid-template-columns: minmax(22rem, 34rem) minmax(0, 1fr);
+    gap: var(--col-gap);
+    align-items: start;
+}
+
+.pv-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pv-list a {
+    display: grid;
+    grid-template-columns: 4rem minmax(0, 1fr);
+    gap: 0 1rem;
+    padding: .55rem 0;
+    text-decoration: none;
+    color: var(--ink);
+}
+
+.pv-year {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    color: var(--violet);
+    padding-top: .05rem;
+}
+
+.pv-text {
+    display: flex;
+    flex-direction: column;
+    gap: .15rem;
+}
+
+.pv-title {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--ink-strong);
+}
+
+.pv-medium {
+    font-size: .85rem;
+    line-height: 1.4;
+    color: var(--quiet);
+}
+
+.pv-list a.is-shown .pv-title,
+.pv-list a:hover .pv-title,
+.pv-list a:focus-visible .pv-title {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.pv-thumb {
+    display: none;
+}
+
+.pv-stage {
+    position: sticky;
+    top: 2rem;
+    margin: 0;
+    height: calc(100vh - 4rem);
+}
+
+.pv-stage img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* -- catalogue: one row per work, in columns -- */
+
+.cat {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cat th {
+    text-align: left;
+    font-weight: 400;
+    font-size: .85rem;
+    color: var(--quiet);
+    padding: 0 1.25rem .6rem 0;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cat td {
+    vertical-align: top;
+    padding: .9rem 1.25rem .9rem 0;
+    border-bottom: 1px solid var(--rule);
+}
+
+.cat tbody tr:hover {
+    background: #fafafa;
+}
+
+.cat-img {
+    width: 104px;
+}
+
+.cat-img img {
+    display: block;
+    width: 96px;
+    height: 64px;
+    object-fit: cover;
+    background: #f2f2f2;
+}
+
+.cat-year {
+    width: 7rem;
+    white-space: nowrap;
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    color: var(--violet);
+}
+
+.cat-title {
+    width: 34%;
+}
+
+.cat-title a {
+    font-family: "Inconsolata", monospace;
+    font-weight: 600;
+    font-size: 1.05rem;
+    line-height: 1.3;
+    color: var(--ink-strong);
+    text-decoration: none;
+}
+
+.cat-title a:hover,
+.cat-title a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.cat-place {
+    display: block;
+    margin-top: .2rem;
+    font-size: .85rem;
+    color: var(--quiet);
+}
+
+.cat-medium {
+    font-size: .9rem;
+    line-height: 1.45;
+    color: var(--ink);
+}
+
+/* -- the switcher shown only on the comparison pages -- */
+
+.idx-switch {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 10;
+    display: flex;
+    gap: .9rem;
+    align-items: baseline;
+    padding: .55rem .9rem;
+    background: #fff;
+    border: 1px solid var(--rule);
+    font-family: "Inconsolata", monospace;
+    font-size: .9rem;
+}
+
+.idx-switch span {
+    color: var(--quiet);
+}
+
+.idx-switch strong {
+    color: var(--violet);
+}
+
+@media (max-width: 960px) {
+    .idx-preview {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .pv-stage {
+        display: none;
+    }
+
+    .pv-list a {
+        grid-template-columns: 4rem minmax(0, 1fr) 84px;
+    }
+
+    .pv-thumb {
+        display: block;
+    }
+
+    .pv-thumb img {
+        display: block;
+        width: 84px;
+        height: 56px;
+        object-fit: cover;
+    }
+
+    .cat thead {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+    }
+
+    .cat,
+    .cat tbody,
+    .cat tr,
+    .cat td {
+        display: block;
+        width: auto;
+    }
+
+    .cat tr {
+        display: grid;
+        grid-template-columns: 96px minmax(0, 1fr);
+        gap: .2rem 1rem;
+        padding: .9rem 0;
+        border-bottom: 1px solid var(--rule);
+    }
+
+    .cat td {
+        padding: 0;
+        border: 0;
+    }
+
+    .cat-img {
+        grid-row: span 3;
+    }
+}
+
+@media (max-width: 560px) {
+    .idx-plates {
+        --plate-h: 150px;
+        gap: 2.25rem 1rem;
+    }
+
+    .pv-list a {
+        grid-template-columns: 3.25rem minmax(0, 1fr) 72px;
+    }
+
+    .pv-thumb img {
+        width: 72px;
+        height: 48px;
+    }
+}

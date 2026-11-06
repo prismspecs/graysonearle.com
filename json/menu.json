@@ -4,11 +4,15 @@
         "url": "/"
     },
     {
-        "title": "about",
-        "url": "/about"
+        "title": "work",
+        "url": "/work"
     },
     {
         "title": "texts",
         "url": "/texts.html"
+    },
+    {
+        "title": "about",
+        "url": "/about"
     }
 ]
