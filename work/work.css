@@ -265,6 +265,20 @@
     max-width: 46em;
 }
 
+/* an image's caption runs exactly as wide as the image: the figure shrinks to
+   the image, and the caption is kept from widening it */
+@media (min-width: 961px) {
+    .work-figure:has(> .work-row) {
+        width: fit-content;
+        max-width: 100%;
+    }
+
+    .work-row + figcaption {
+        max-width: none;
+        contain: inline-size;
+    }
+}
+
 /* images in a row with captions of their own: each caption under its image, as wide as it */
 .work-figure .work-caps {
     display: flex;
