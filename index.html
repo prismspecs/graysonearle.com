@@ -66,23 +66,10 @@
             position: fixed;
             top: 1rem;
             right: 1.5rem;
-            max-width: 290px;
-            padding: 8px 12px;
-            background: rgba(255, 255, 255, 0.95);
-            font-family: "Inconsolata", monospace;
-            font-size: 12px;
-            line-height: 1.4;
-            color: #666;
+            font-size: 16px;
+            line-height: 1;
+            text-decoration: none;
             z-index: 2147483001;
-        }
-
-        .fly-residency-notice a {
-            color: #333;
-            text-decoration: underline;
-        }
-
-        .fly-residency-notice a:hover {
-            color: #000;
         }
 
         /* Desktop only: hide notice and flies on mobile/narrow screens */
@@ -94,9 +81,7 @@
         }
     </style>
 
-    <div class="fly-residency-notice">
-        The flies on this page are part of <em><a href="https://a-fly-like-thee.webresidencies.akademie-solitude.de" target="_blank" rel="noopener noreferrer">A Fly Like Thee</a></em>, an Akademie Schloss Solitude Web Residency project by Olivier Jonvaux.
-    </div>
+    <a class="fly-residency-notice" href="https://webresidencies.akademie-solitude.de/a-fly-like-thee/" target="_blank" rel="noopener noreferrer" title="A Fly Like Thee" aria-label="A Fly Like Thee">🪰</a>
 
     <script>
         if (window.innerWidth > 768) {
